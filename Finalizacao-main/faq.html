@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Perguntas e Respostas - Big Data Analytics</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <h1>Big Data Analytics</h1>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="index.html" class="nav-link">Início</a></li>
+                    <li><a href="politica.html" class="nav-link">Política</a></li>
+                    <li><a href="economia.html" class="nav-link">Economia</a></li>
+                    <li><a href="social.html" class="nav-link">Social</a></li>
+                    <li><a href="faq.html" class="nav-link">FAQ</a></li>
+                </ul>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Perguntas e Respostas</h1>
+                <p class="page-subtitle">Tire suas dúvidas sobre Big Data e análise de dados</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-container">
+                    <div class="faq-questions">
+                        <h2>Perguntas Frequentes</h2>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>O que é Big Data?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Big Data refere-se a conjuntos de dados extremamente grandes e complexos que requerem ferramentas especializadas para coleta, armazenamento, processamento e análise. É caracterizado pelos 5 Vs: Volume, Velocidade, Variedade, Valor e Veracidade.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Qual a diferença entre Big Data e análise de dados tradicional?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>A análise de dados tradicional trabalha com volumes menores e estruturados, enquanto Big Data lida com volumes massivos, dados não estruturados e em tempo real, exigindo tecnologias específicas como Hadoop e Spark.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Como o Big Data é usado na política?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Na política, o Big Data é usado para análise de opinião pública, segmentação de eleitores, otimização de campanhas eleitorais, monitoramento de redes sociais e formulação de políticas públicas baseadas em evidências.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Quais são as principais ferramentas de Big Data?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>As principais ferramentas incluem: Hadoop, Apache Spark, Python (Pandas, NumPy), R, SQL, NoSQL (MongoDB, Cassandra), Tableau, Power BI, e plataformas cloud como AWS, Google Cloud e Azure.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Quais são os riscos do Big Data?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Os principais riscos incluem violação de privacidade, discriminação algorítmica, segurança de dados, manipulação de informações, viés nos algoritmos e dependência excessiva de tecnologia.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Como começar uma carreira em Big Data?</h3>
+                                <span class="faq-toggle">+</span>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Para começar, é recomendado aprender programação (Python/R), estatística, SQL, ferramentas de visualização, e obter certificações em plataformas cloud. Experiência prática com projetos é fundamental.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="question-form">
+                        <h2>Faça sua Pergunta</h2>
+                        <form id="questionForm">
+                            <div class="form-group">
+                                <label for="name">Nome:</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="category">Categoria:</label>
+                                <select id="category" name="category" required>
+                                    <option value="">Selecione uma categoria</option>
+                                    <option value="geral">Geral sobre Big Data</option>
+                                    <option value="politica">Big Data na Política</option>
+                                    <option value="economia">Big Data na Economia</option>
+                                    <option value="social">Big Data na Sociedade</option>
+                                    <option value="carreira">Carreira e Educação</option>
+                                    <option value="tecnologia">Ferramentas e Tecnologias</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="question">Sua Pergunta:</label>
+                                <textarea id="question" name="question" rows="5" placeholder="Digite sua pergunta sobre Big Data..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn">Enviar Pergunta</button>
+                        </form>
+                        
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Big Data Analytics</h3>
+                    <p>Explorando o poder dos dados para transformar a sociedade.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Úteis</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="politica.html">Esfera Política</a></li>
+                        <li><a href="economia.html">Esfera Econômica</a></li>
+                        <li><a href="social.html">Esfera Social</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <p>Este site foi criado para fins educacionais sobre Big Data e análise de dados.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Big Data Analytics. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="faq.js"></script>
+</body>
+</html>
+
